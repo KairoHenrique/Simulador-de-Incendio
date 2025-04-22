@@ -1,0 +1,73 @@
+Animal em: (3,0)
+(0,1) vira 2 (acima)
+(2,1) vira 2 (abaixo)
+(1,0) vira 2 (esquerda)
+(1,2) vira 2 (direita)
+Iteracao 1:
+1 2 1 1 4 
+2 3 2 1 1 
+1 2 1 1 4 
+A 0 1 1 1 
+1 4 1 0 4 
+Animal em: (3,0)
+(0,0) vira 2 (esquerda)
+(0,2) vira 2 (direita)
+(0,0) vira 2 (acima)
+(2,0) vira 2 (abaixo)
+(0,2) vira 2 (acima)
+(2,2) vira 2 (abaixo)
+(1,3) vira 2 (direita)
+(2,0) vira 2 (esquerda)
+(2,2) vira 2 (direita)
+Iteracao 2:
+2 3 2 1 4 
+3 3 3 2 1 
+2 3 2 1 4 
+A 0 1 1 1 
+1 4 1 0 4 
+Animal em: (3,0)
+(0,3) vira 2 (direita)
+(0,3) vira 2 (acima)
+(2,3) vira 2 (abaixo)
+(1,4) vira 2 (direita)
+(3,2) vira 2 (abaixo)
+(2,3) vira 2 (direita)
+Iteracao 3:
+3 3 3 2 4 
+3 3 3 3 2 
+3 3 3 2 4 
+A 0 2 1 1 
+1 4 1 0 4 
+Animal em: (3,0)
+(3,3) vira 2 (abaixo)
+(4,2) vira 2 (abaixo)
+(3,3) vira 2 (direita)
+Iteracao 4:
+3 3 3 3 4 
+3 3 3 3 3 
+3 3 3 3 4 
+0 0 3 2 1 
+A 4 2 0 4 
+Animal em: (4,0)
+(4,1) vira 0
+(3,1) vira 1
+(4,2) vira 1
+(3,4) vira 2 (direita)
+Iteracao 5:
+3 3 3 3 4 
+3 3 3 3 3 
+3 3 3 3 4 
+0 1 3 3 2 
+1 A 1 0 4 
+Animal em: (4,1)
+Iteracao 6:
+3 3 3 3 4 
+3 3 3 3 3 
+3 3 3 3 4 
+0 1 3 3 3 
+1 A 1 0 4 
+
+=== Estatisticas do Animal ===
+Passos: 2
+Agua encontrada: 1
+Sobreviveu: Sim
