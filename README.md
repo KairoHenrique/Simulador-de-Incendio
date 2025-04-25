@@ -1,14 +1,8 @@
 <h1> README DO SIMULADOR DE INCENDIO </h1>
 
-Aluno: Kairo Henrique Ferreira Martins 
-Professor: Michel Pires da Silva  
-Disciplina: Algoritmos e Estruturas de Dados I  
-
----
-
-## Introdução
-
-Este trabalho de aquecimento implementa um simulador de propagação de incêndio em uma floresta modelada por matriz, aliado à movimentação de um animal que busca refúgio em áreas seguras ou fontes de água. A motivação é exercitar conceitos de matrizes dinâmicas, estruturas de dados e controle de fluxo em C++.
+- **Aluno:** Kairo Henrique Ferreira Martins 
+- **Professor:** Michel Pires da Silva  
+- **Disciplina:** Algoritmos e Estruturas de Dados I  
 
 ---
 
@@ -321,6 +315,88 @@ Se após `propagarFogo()` o animal estiver em célula com valor `2`, chama `move
 - Simulação encerra após 6 iterações.
 - Passos: 2 | Água encontrada: 1 | Sobreviveu: Sim
 
+<details>
+  <summary><strong>Mostrar output.dat completo</strong></summary>
+
+```
+Animal em: (3,0)
+(0,1) vira 2 (acima)
+(2,1) vira 2 (abaixo)
+(1,0) vira 2 (esquerda)
+(1,2) vira 2 (direita)
+Iteracao 1:
+1 2 1 1 4 
+2 3 2 1 1 
+1 2 1 1 4 
+A 0 1 1 1 
+1 4 1 0 4 
+Animal em: (3,0)
+(0,0) vira 2 (esquerda)
+(0,2) vira 2 (direita)
+(0,0) vira 2 (acima)
+(2,0) vira 2 (abaixo)
+(0,2) vira 2 (acima)
+(2,2) vira 2 (abaixo)
+(1,3) vira 2 (direita)
+(2,0) vira 2 (esquerda)
+(2,2) vira 2 (direita)
+Iteracao 2:
+2 3 2 1 4 
+3 3 3 2 1 
+2 3 2 1 4 
+A 0 1 1 1 
+1 4 1 0 4 
+Animal em: (3,0)
+(0,3) vira 2 (direita)
+(0,3) vira 2 (acima)
+(2,3) vira 2 (abaixo)
+(1,4) vira 2 (direita)
+(3,2) vira 2 (abaixo)
+(2,3) vira 2 (direita)
+Iteracao 3:
+3 3 3 2 4 
+3 3 3 3 2 
+3 3 3 2 4 
+A 0 2 1 1 
+1 4 1 0 4 
+Animal em: (3,0)
+(3,3) vira 2 (abaixo)
+(4,2) vira 2 (abaixo)
+(3,3) vira 2 (direita)
+Iteracao 4:
+3 3 3 3 4 
+3 3 3 3 3 
+3 3 3 3 4 
+0 0 3 2 1 
+A 4 2 0 4 
+Animal em: (4,0)
+(4,1) vira 0
+(3,1) vira 1
+(4,2) vira 1
+(3,4) vira 2 (direita)
+Iteracao 5:
+3 3 3 3 4 
+3 3 3 3 3 
+3 3 3 3 4 
+0 1 3 3 2 
+1 A 1 0 4 
+Animal em: (4,1)
+Iteracao 6:
+3 3 3 3 4 
+3 3 3 3 3 
+3 3 3 3 4 
+0 1 3 3 3 
+1 A 1 0 4 
+
+=== Estatisticas do Animal ===
+Passos: 2
+Agua encontrada: 1
+Sobreviveu: Sim
+
+```
+</details> 
+
+
 ---
 
 ### Caso 2: Propagação com vento (somente para a direita)
@@ -341,6 +417,127 @@ Se após `propagarFogo()` o animal estiver em célula com valor `2`, chama `move
 - Animal inicia em (3,0), anda 2 vezes, mas não encontra água.
 - Simulação encerra após 7 iterações.
 - Passos: 2 | Água encontrada: 0 | Sobreviveu: Sim
+<details>
+  <summary><strong>Mostrar output.dat completo</strong></summary>
+
+```
+Animal em: (3,0)
+(1,2) vira 2 (abaixo)
+(0,1) vira 2 (esquerda)
+(0,3) vira 2 (direita)
+(1,2) vira 2 (acima)
+(3,2) vira 2 (abaixo)
+(2,1) vira 2 (esquerda)
+(2,3) vira 2 (direita)
+Iteracao 1:
+1 2 3 2 1 1 
+1 1 2 1 1 1 
+1 2 3 2 1 1 
+A 1 2 4 1 1 
+1 1 1 1 1 1 
+1 1 1 1 1 1 
+Animal em: (3,0)
+(1,1) vira 2 (abaixo)
+(0,0) vira 2 (esquerda)
+(1,3) vira 2 (abaixo)
+(0,4) vira 2 (direita)
+(1,1) vira 2 (esquerda)
+(1,3) vira 2 (direita)
+(1,1) vira 2 (acima)
+(3,1) vira 2 (abaixo)
+(2,0) vira 2 (esquerda)
+(1,3) vira 2 (acima)
+(2,4) vira 2 (direita)
+(4,2) vira 2 (abaixo)
+(3,1) vira 2 (esquerda)
+Iteracao 2:
+2 3 3 3 2 1 
+1 2 3 2 1 1 
+2 3 3 3 2 1 
+A 2 3 4 1 1 
+1 1 2 1 1 1 
+1 1 1 1 1 1 
+Animal em: (3,0)
+(1,0) vira 2 (abaixo)
+(1,4) vira 2 (abaixo)
+(0,5) vira 2 (direita)
+(1,0) vira 2 (esquerda)
+(1,4) vira 2 (direita)
+(1,0) vira 2 (acima)
+(1,4) vira 2 (acima)
+(3,4) vira 2 (abaixo)
+(2,5) vira 2 (direita)
+(4,1) vira 2 (abaixo)
+(5,2) vira 2 (abaixo)
+(4,1) vira 2 (esquerda)
+(4,3) vira 2 (direita)
+Iteracao 3:
+3 3 3 3 3 2 
+2 3 3 3 2 1 
+3 3 3 3 3 2 
+A 3 3 4 2 1 
+1 2 3 2 1 1 
+1 1 2 1 1 1 
+Animal em: (3,0)
+(1,5) vira 2 (abaixo)
+(1,5) vira 2 (direita)
+(1,5) vira 2 (acima)
+(3,5) vira 2 (abaixo)
+(4,4) vira 2 (abaixo)
+(3,5) vira 2 (direita)
+(5,1) vira 2 (abaixo)
+(4,0) vira 2 (esquerda)
+(5,3) vira 2 (abaixo)
+(4,4) vira 2 (direita)
+(5,1) vira 2 (esquerda)
+(5,3) vira 2 (direita)
+Iteracao 4:
+3 3 3 3 3 3 
+3 3 3 3 3 2 
+3 3 3 3 3 3 
+A 3 3 4 3 2 
+2 3 3 3 2 1 
+1 2 3 2 1 1 
+Animal em: (3,0)
+(4,5) vira 2 (abaixo)
+(5,0) vira 2 (abaixo)
+(5,4) vira 2 (abaixo)
+(4,5) vira 2 (direita)
+(5,0) vira 2 (esquerda)
+(5,4) vira 2 (direita)
+Iteracao 5:
+3 3 3 3 3 3 
+3 3 3 3 3 3 
+3 3 3 3 3 3 
+A 3 3 4 3 3 
+3 3 3 3 3 2 
+2 3 3 3 2 1 
+Animal em: (3,0)
+(5,5) vira 2 (abaixo)
+(5,5) vira 2 (direita)
+Iteracao 6:
+3 3 3 3 3 3 
+3 3 3 3 3 3 
+3 3 3 3 3 3 
+A 3 3 4 3 3 
+3 3 3 3 3 3 
+3 3 3 3 3 2 
+Animal em: (3,0)
+Iteracao 7:
+3 3 3 3 3 3 
+3 3 3 3 3 3 
+3 3 3 3 3 3 
+A 3 3 4 3 3 
+3 3 3 3 3 3 
+3 3 3 3 3 3 
+
+=== Estatisticas do Animal ===
+Passos: 2
+Agua encontrada: 0
+Sobreviveu: Sim
+
+```
+</details> 
 
 ---
 
@@ -360,6 +557,82 @@ Se após `propagarFogo()` o animal estiver em célula com valor `2`, chama `move
 - Animal inicia em (3,0), mas logo fica encurralado.
 - Apesar de estar vivo no final, não pode mais se mover.
 - Passos: 2 | Água encontrada: 0 | Sobreviveu: Sim
+<details>
+  <summary><strong>Mostrar output.dat completo</strong></summary>
+
+```
+Animal em: (3,0)
+(1,0) vira 2 (abaixo)
+(0,1) vira 2 (direita)
+Iteracao 1:
+3 2 1 1 
+2 1 1 1 
+1 1 1 1 
+A 1 1 1 
+Animal em: (3,0)
+(1,1) vira 2 (abaixo)
+(0,2) vira 2 (direita)
+(2,0) vira 2 (abaixo)
+(1,1) vira 2 (direita)
+Iteracao 2:
+3 3 2 1 
+3 2 1 1 
+2 1 1 1 
+A 1 1 1 
+Animal em: (3,0)
+(1,2) vira 2 (abaixo)
+(0,3) vira 2 (direita)
+(2,1) vira 2 (abaixo)
+(1,2) vira 2 (direita)
+(2,1) vira 2 (direita)
+Iteracao 3:
+3 3 3 2 
+3 3 2 1 
+3 2 1 1 
+A 1 1 1 
+Animal em: (3,0)
+(1,3) vira 2 (abaixo)
+(2,2) vira 2 (abaixo)
+(1,3) vira 2 (direita)
+(3,1) vira 2 (abaixo)
+(2,2) vira 2 (direita)
+Iteracao 4:
+3 3 3 3 
+3 3 3 2 
+3 3 2 1 
+A 2 1 1 
+Animal em: (3,0)
+(2,3) vira 2 (abaixo)
+(3,2) vira 2 (abaixo)
+(2,3) vira 2 (direita)
+(3,2) vira 2 (direita)
+Iteracao 5:
+3 3 3 3 
+3 3 3 3 
+3 3 3 2 
+A 3 2 1 
+Animal em: (3,0)
+(3,3) vira 2 (abaixo)
+(3,3) vira 2 (direita)
+Iteracao 6:
+3 3 3 3 
+3 3 3 3 
+3 3 3 3 
+A 3 3 2 
+Animal em: (3,0)
+Iteracao 7:
+3 3 3 3 
+3 3 3 3 
+3 3 3 3 
+A 3 3 3 
+
+=== Estatisticas do Animal ===
+Passos: 2
+Agua encontrada: 0
+Sobreviveu: Sim
+
+```
+</details> 
 
 ---
 
@@ -377,6 +650,53 @@ Se após `propagarFogo()` o animal estiver em célula com valor `2`, chama `move
 - Animal se move normalmente, mas a simulação é interrompida após 3 iterações.
 - Demonstra o uso efetivo do parâmetro `MaxIteracoes`.
 - Passos: 2 | Água encontrada: 0 | Sobreviveu: Sim
+<details>
+  <summary><strong>Mostrar output.dat completo</strong></summary>
+
+```
+Animal em: (2,0)
+(1,0) vira 2 (abaixo)
+(0,1) vira 2 (direita)
+Iteracao 1:
+3 2 1 
+2 1 1 
+A 1 1 
+Animal em: (2,0)
+(1,1) vira 2 (abaixo)
+(0,2) vira 2 (direita)
+(1,1) vira 2 (direita)
+Iteracao 2:
+3 3 2 
+3 2 1 
+A 1 1 
+Animal em: (2,0)
+(1,2) vira 2 (abaixo)
+(2,1) vira 2 (abaixo)
+(1,2) vira 2 (direita)
+Iteracao 3:
+3 3 3 
+3 3 2 
+A 2 1 
+Animal em: (2,0)
+(2,2) vira 2 (abaixo)
+(2,2) vira 2 (direita)
+Iteracao 4:
+3 3 3 
+A 3 3 
+0 3 2 
+Animal em: (1,0)
+Iteracao 5:
+3 3 3 
+3 3 3 
+A 3 3 
+
+=== Estatisticas do Animal ===
+Passos: 2
+Agua encontrada: 0
+Sobreviveu: Sim
+
+```
+</details> 
 
 ---
 
@@ -397,10 +717,107 @@ Se após `propagarFogo()` o animal estiver em célula com valor `2`, chama `move
 - Recebe segunda chance, se move para (1,0) e continua vivo.
 - Mesmo cercado por fogo, a lógica da segunda chance garante que ele tente escapar.
 - Passos: 2 | Água encontrada: 0 | Sobreviveu: Sim
+<details>
+  <summary><strong>Mostrar output.dat completo</strong></summary>
+
+```
+Animal em: (0,0)
+(0,1) vira 2 (acima)
+(2,1) vira 2 (abaixo)
+(1,0) vira 2 (esquerda)
+(1,2) vira 2 (direita)
+Iteracao 1:
+A 2 1 1 4 
+2 3 2 1 1 
+1 2 1 1 1 
+1 1 1 1 1 
+1 1 1 1 1 
+Animal em: (0,0)
+(0,2) vira 2 (direita)
+(2,0) vira 2 (abaixo)
+(0,2) vira 2 (acima)
+(2,2) vira 2 (abaixo)
+(1,3) vira 2 (direita)
+(3,1) vira 2 (abaixo)
+(2,0) vira 2 (esquerda)
+(2,2) vira 2 (direita)
+Iteracao 2:
+A 3 2 1 4 
+3 3 3 2 1 
+2 3 2 1 1 
+1 2 1 1 1 
+1 1 1 1 1 
+Animal em: (0,0)
+(0,3) vira 2 (direita)
+(0,3) vira 2 (acima)
+(2,3) vira 2 (abaixo)
+(1,4) vira 2 (direita)
+(3,0) vira 2 (abaixo)
+(3,2) vira 2 (abaixo)
+(2,3) vira 2 (direita)
+(4,1) vira 2 (abaixo)
+(3,0) vira 2 (esquerda)
+(3,2) vira 2 (direita)
+Iteracao 3:
+A 3 3 2 4 
+3 3 3 3 2 
+3 3 3 2 1 
+2 3 2 1 1 
+1 2 1 1 1 
+Animal em: (0,0)
+(2,4) vira 2 (abaixo)
+(3,3) vira 2 (abaixo)
+(2,4) vira 2 (direita)
+(4,0) vira 2 (abaixo)
+(4,2) vira 2 (abaixo)
+(3,3) vira 2 (direita)
+(4,0) vira 2 (esquerda)
+(4,2) vira 2 (direita)
+Iteracao 4:
+0 3 3 3 4 
+A 3 3 3 3 
+3 3 3 3 2 
+3 3 3 2 1 
+2 3 2 1 1 
+Animal em: (1,0)
+(3,4) vira 2 (abaixo)
+(4,3) vira 2 (abaixo)
+(3,4) vira 2 (direita)
+(4,3) vira 2 (direita)
+Iteracao 5:
+A 3 3 3 4 
+3 3 3 3 3 
+3 3 3 3 3 
+3 3 3 3 2 
+3 3 3 2 1 
+Animal em: (0,0)
+(4,4) vira 2 (abaixo)
+(4,4) vira 2 (direita)
+Iteracao 6:
+A 3 3 3 4 
+3 3 3 3 3 
+3 3 3 3 3 
+3 3 3 3 3 
+3 3 3 3 2 
+Animal em: (0,0)
+Iteracao 7:
+A 3 3 3 4 
+3 3 3 3 3 
+3 3 3 3 3 
+3 3 3 3 3 
+3 3 3 3 3 
+
+=== Estatisticas do Animal ===
+Passos: 2
+Agua encontrada: 0
+Sobreviveu: Sim
+
+```
+</details> 
 
 
 
-
+---
 
 ## Ideias de Melhoria de Performance
 
