@@ -303,6 +303,101 @@ Se após `propagarFogo()` o animal estiver em célula com valor `2`, chama `move
 
 ## Casos de Teste
 
+### Caso 1: Propagação sem vento (todas as direções)
+
+**input.dat**
+```
+5 5 1 1
+1 1 1 1 4
+1 2 1 1 1
+1 1 1 1 4
+0 0 1 1 1
+1 4 1 0 4
+```
+
+**output.dat (resumo)**
+- Fogo se propaga em todas as direções ortogonais.
+- Animal inicia em (3,0), movimenta-se até (4,1), encontra água e transforma vizinhos.
+- Simulação encerra após 6 iterações.
+- Passos: 2 | Água encontrada: 1 | Sobreviveu: Sim
+
+---
+
+### Caso 2: Propagação com vento (somente para a direita)
+
+**input.dat**
+```
+6 6 2 2
+1 1 2 1 1 1
+1 1 1 1 1 1
+1 1 1 1 1 1
+0 1 1 4 1 1
+1 1 1 1 1 1
+1 1 1 1 1 1
+```
+
+**output.dat (resumo)**
+- Fogo se propaga apenas para a direita, de acordo com `Config::Vento`.
+- Animal inicia em (3,0), anda 2 vezes, mas não encontra água.
+- Simulação encerra após 7 iterações.
+- Passos: 2 | Água encontrada: 0 | Sobreviveu: Sim
+
+---
+
+### Caso 3: Animal preso pelo fogo
+
+**input.dat**
+```
+4 4 0 0
+2 1 1 1
+1 1 1 1
+1 1 1 1
+0 1 1 1
+```
+
+**output.dat (resumo)**
+- Fogo fecha todas as rotas possíveis.
+- Animal inicia em (3,0), mas logo fica encurralado.
+- Apesar de estar vivo no final, não pode mais se mover.
+- Passos: 2 | Água encontrada: 0 | Sobreviveu: Sim
+
+---
+
+### Caso 4: Interrupção por limite de iterações (MaxIteracoes = 3)
+
+**input.dat**
+```
+3 3 0 0
+2 1 1
+1 1 1
+0 1 1
+```
+
+**output.dat (resumo)**
+- Animal se move normalmente, mas a simulação é interrompida após 3 iterações.
+- Demonstra o uso efetivo do parâmetro `MaxIteracoes`.
+- Passos: 2 | Água encontrada: 0 | Sobreviveu: Sim
+
+---
+
+### Caso 5: Teste da Segunda Chance
+
+**input.dat**
+```
+5 5 1 1
+0 1 1 1 4
+1 2 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+1 1 1 1 1
+```
+
+**output.dat (resumo)**
+- Animal começa em (0,0), e na primeira propagação o fogo ameaça sua posição.
+- Recebe segunda chance, se move para (1,0) e continua vivo.
+- Mesmo cercado por fogo, a lógica da segunda chance garante que ele tente escapar.
+- Passos: 2 | Água encontrada: 0 | Sobreviveu: Sim
+
 
 
 
@@ -329,7 +424,6 @@ make run
 
 ---
 
-## Autores
+## Autor
 
 Kairo Henrique Ferreira Martins
-```
