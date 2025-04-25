@@ -6,7 +6,7 @@
 
 ---
 
-## Funcionamento geral do programa
+## Introdução
 
 - **Configuração:** um arquivo `Config.hpp` (na pasta `include/`) define parâmetros como vento, número máximo de iterações e exibição em console.  
 - **Leitura:** a função em `LerArquivo.hpp/cpp` carrega uma matriz de `input.dat`.  
@@ -16,7 +16,7 @@
 
 ---
 
-## Sobre os Codigos
+## Metadologia
 
 Em cada ciclo:
 
@@ -818,8 +818,8 @@ Sobreviveu: Sim
 
 
 ---
-
-## Ideias de Melhoria de Performance
+## Conlusão
+### Ideias de Melhoria de Performance
 
 
 - Em vez de varrer toda a matriz, manter um `queue<pair<int,int>>` com células em chamas
