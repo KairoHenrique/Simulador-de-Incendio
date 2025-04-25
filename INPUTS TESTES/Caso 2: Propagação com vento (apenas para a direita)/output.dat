@@ -1,0 +1,114 @@
+Animal em: (3,0)
+(1,2) vira 2 (abaixo)
+(0,1) vira 2 (esquerda)
+(0,3) vira 2 (direita)
+(1,2) vira 2 (acima)
+(3,2) vira 2 (abaixo)
+(2,1) vira 2 (esquerda)
+(2,3) vira 2 (direita)
+Iteracao 1:
+1 2 3 2 1 1 
+1 1 2 1 1 1 
+1 2 3 2 1 1 
+A 1 2 4 1 1 
+1 1 1 1 1 1 
+1 1 1 1 1 1 
+Animal em: (3,0)
+(1,1) vira 2 (abaixo)
+(0,0) vira 2 (esquerda)
+(1,3) vira 2 (abaixo)
+(0,4) vira 2 (direita)
+(1,1) vira 2 (esquerda)
+(1,3) vira 2 (direita)
+(1,1) vira 2 (acima)
+(3,1) vira 2 (abaixo)
+(2,0) vira 2 (esquerda)
+(1,3) vira 2 (acima)
+(2,4) vira 2 (direita)
+(4,2) vira 2 (abaixo)
+(3,1) vira 2 (esquerda)
+Iteracao 2:
+2 3 3 3 2 1 
+1 2 3 2 1 1 
+2 3 3 3 2 1 
+A 2 3 4 1 1 
+1 1 2 1 1 1 
+1 1 1 1 1 1 
+Animal em: (3,0)
+(1,0) vira 2 (abaixo)
+(1,4) vira 2 (abaixo)
+(0,5) vira 2 (direita)
+(1,0) vira 2 (esquerda)
+(1,4) vira 2 (direita)
+(1,0) vira 2 (acima)
+(1,4) vira 2 (acima)
+(3,4) vira 2 (abaixo)
+(2,5) vira 2 (direita)
+(4,1) vira 2 (abaixo)
+(5,2) vira 2 (abaixo)
+(4,1) vira 2 (esquerda)
+(4,3) vira 2 (direita)
+Iteracao 3:
+3 3 3 3 3 2 
+2 3 3 3 2 1 
+3 3 3 3 3 2 
+A 3 3 4 2 1 
+1 2 3 2 1 1 
+1 1 2 1 1 1 
+Animal em: (3,0)
+(1,5) vira 2 (abaixo)
+(1,5) vira 2 (direita)
+(1,5) vira 2 (acima)
+(3,5) vira 2 (abaixo)
+(4,4) vira 2 (abaixo)
+(3,5) vira 2 (direita)
+(5,1) vira 2 (abaixo)
+(4,0) vira 2 (esquerda)
+(5,3) vira 2 (abaixo)
+(4,4) vira 2 (direita)
+(5,1) vira 2 (esquerda)
+(5,3) vira 2 (direita)
+Iteracao 4:
+3 3 3 3 3 3 
+3 3 3 3 3 2 
+3 3 3 3 3 3 
+A 3 3 4 3 2 
+2 3 3 3 2 1 
+1 2 3 2 1 1 
+Animal em: (3,0)
+(4,5) vira 2 (abaixo)
+(5,0) vira 2 (abaixo)
+(5,4) vira 2 (abaixo)
+(4,5) vira 2 (direita)
+(5,0) vira 2 (esquerda)
+(5,4) vira 2 (direita)
+Iteracao 5:
+3 3 3 3 3 3 
+3 3 3 3 3 3 
+3 3 3 3 3 3 
+A 3 3 4 3 3 
+3 3 3 3 3 2 
+2 3 3 3 2 1 
+Animal em: (3,0)
+(5,5) vira 2 (abaixo)
+(5,5) vira 2 (direita)
+Iteracao 6:
+3 3 3 3 3 3 
+3 3 3 3 3 3 
+3 3 3 3 3 3 
+A 3 3 4 3 3 
+3 3 3 3 3 3 
+3 3 3 3 3 2 
+Animal em: (3,0)
+Iteracao 7:
+3 3 3 3 3 3 
+3 3 3 3 3 3 
+3 3 3 3 3 3 
+A 3 3 4 3 3 
+3 3 3 3 3 3 
+3 3 3 3 3 3 
+
+=== Estatisticas do Animal ===
+Passos: 2
+Agua encontrada: 0
+Sobreviveu: Sim
