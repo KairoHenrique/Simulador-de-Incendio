@@ -822,9 +822,9 @@ Sobreviveu: Sim
 ## Ideias de Melhoria de Performance
 
 
-Em vez de varrer toda a matriz, manter um `queue<pair<int,int>>` com células em chamas
+- Em vez de varrer toda a matriz, manter um `queue<pair<int,int>>` com células em chamas
 
-Usar OpenMP para processar vizinhanças de fogo simultaneamente.  
+- Usar OpenMP para processar vizinhanças de fogo simultaneamente.  
 
 
 ---
@@ -843,4 +843,4 @@ make run
 
 ## Autor
 
-Kairo Henrique Ferreira Martins
+- Kairo Henrique Ferreira Martins
