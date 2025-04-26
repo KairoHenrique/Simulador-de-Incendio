@@ -25,7 +25,7 @@ Fornecer uma ferramenta para:
      - `1`: Árvore saudável  
      - `2`: Fogo ativo  
      - `3`: Árvore queimada  
-     - `4`: Água (converte células adjacentes para seguras).  
+     - `4`: Água (converte células adjacentes para Árvore saudável).  
 
 2. **Propagação Realista do Fogo**  
    - Direções configuráveis do vento (`Config.hpp`).  
