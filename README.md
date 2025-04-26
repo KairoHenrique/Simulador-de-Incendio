@@ -44,7 +44,12 @@ Fornecer uma ferramenta para:
 ---
 
 ## Metadologia
+### Fluxograma
+<details> 
+  <summary><strong>Clique para ver o Fluxograma</strong></summary>
 
+<img src="https://www.mermaidchart.com/raw/d40e26b1-45b8-4fa2-99b9-564338426c0b?theme=light&version=v0.1&format=svg"/>
+  </details> 
 Em cada ciclo:
 
 1. `executarIteracao(iter)`  
