@@ -7,10 +7,10 @@
 ---
 
 ## Introdução
-  Este projeto modela a propagação de fogo em uma floresta representada por uma matriz, incluindo a movimentação estratégica de um animal em busca de segurança. Desenvolvido em C++, ele segue rigorosamente as especificações técnicas de um trabalho acadêmico,
+  Este projeto modela a propagação de fogo em uma floresta representada por uma matriz, incluindo a movimentação estratégica de um animal em busca de segurança.
 ---
 
-## **Objetivo**  
+### **Objetivo**  
 Fornecer uma ferramenta para:  
 - Analisar padrões de propagação de fogo com/sem influência do vento.  
 - Simular a busca de rotas de fuga por um animal em tempo real.  
@@ -18,7 +18,7 @@ Fornecer uma ferramenta para:
 
 ---
 
-## **Funcionalidades Principais**  
+### **Funcionalidades Principais**  
 1. **Matriz Dinâmica**  
    - Representa a floresta com células de estados variados:  
      - `0`: Área segura (não queima)  
