@@ -1,4 +1,4 @@
-<h1> README DO SIMULADOR DE INCENDIO </h1>
+<h1> 🔥README DO SIMULADOR DE INCENDIO🔥</h1>
 
 - **Aluno:** Kairo Henrique Ferreira Martins 
 - **Professor:** Michel Pires da Silva  
@@ -30,7 +30,7 @@ Em cada ciclo:
 ## Arquivo de Configuração (`Config.hpp`)
 
 ```cpp
-#pragma once
+#pragma once🔥
 namespace Config {
     // Direções de vento: [Cima, Baixo, Esquerda, Direita]
     const bool Vento[4]        = { true, true, true, true };
