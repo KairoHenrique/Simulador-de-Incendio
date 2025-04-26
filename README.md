@@ -864,7 +864,13 @@ Sobreviveu: Sim
 ## Conclusão
 ### Ideias de Melhoria de Performance
 
+## Conclusão
+### Sobre o projeto
+- O desenvolvimento deste simulador de propagação de incêndio aplicou conceitos fundamentais da programação em C++, como manipulação de matrizes, controle de fluxo, leitura/escrita de arquivos e modularização de código.
 
+- A simulação permitiu explorar diferentes cenários com e sem a influência do vento
+
+### Ideias de Melhoria de Performance
 - Em vez de varrer toda a matriz, manter um `queue<pair<int,int>>` com células em chamas
 
 - Usar OpenMP para processar vizinhanças de fogo simultaneamente.  
