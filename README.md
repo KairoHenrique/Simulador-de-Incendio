@@ -861,8 +861,6 @@ Sobreviveu: Sim
 
 
 ---
-## Conclusão
-### Ideias de Melhoria de Performance
 
 ## Conclusão
 ### Sobre o projeto
