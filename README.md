@@ -42,8 +42,14 @@ Fornecer uma ferramenta para:
      - Estatísticas finais (passos, sobrevivência, etc.).  
 
 ---
+### Simulacao com vento em todas as direcoes
+<details> 
+  <summary><strong>Clique para ver a imagem de exemplo da simulacao com vento em todas as direcoes</strong></summary>
+<img src="Simulacao vento.png"/>
 
-## Metadologia
+</details> 
+
+---
 ### Fluxograma
 <details> 
   <summary><strong>Clique para ver o Fluxograma</strong></summary>
@@ -52,6 +58,9 @@ Fornecer uma ferramenta para:
   </details> 
 
   ---
+
+## Metadologia
+
 Em cada ciclo:
 
 1. `executarIteracao(iter)`  
