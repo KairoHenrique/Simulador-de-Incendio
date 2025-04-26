@@ -7,12 +7,39 @@
 ---
 
 ## Introdução
+  Este projeto modela a propagação de fogo em uma floresta representada por uma matriz, incluindo a movimentação estratégica de um animal em busca de segurança. Desenvolvido em C++, ele segue rigorosamente as especificações técnicas de um trabalho acadêmico,
+---
 
-- **Configuração:** um arquivo `Config.hpp` (na pasta `include/`) define parâmetros como vento, número máximo de iterações e exibição em console.  
-- **Leitura:** a função em `LerArquivo.hpp/cpp` carrega uma matriz de `input.dat`.  
-- **Loop principal:** em `main.cpp`, repete `executarIteracao()` até que o fogo se apague, o animal morra ou atinja o limite de iterações.  
-- **Ordem de ações:** primeiro o animal se move, depois o fogo se propaga; se o fogo alcançar o animal, uma “segunda chance” de movimento é aplicada imediatamente.  
-- **Saída:** cada iteração gera logs e a matriz atualizada em `output.dat`; em tela, a posição do animal é marcada por `A`.
+## **Objetivo**  
+Fornecer uma ferramenta para:  
+- Analisar padrões de propagação de fogo com/sem influência do vento.  
+- Simular a busca de rotas de fuga por um animal em tempo real.  
+- Estudar o impacto de escolhas algorítmicas no desempenho computacional.  
+
+---
+
+## **Funcionalidades Principais**  
+1. **Matriz Dinâmica**  
+   - Representa a floresta com células de estados variados:  
+     - `0`: Área segura (não queima)  
+     - `1`: Árvore saudável  
+     - `2`: Fogo ativo  
+     - `3`: Árvore queimada  
+     - `4`: Água (converte células adjacentes para seguras).  
+
+2. **Propagação Realista do Fogo**  
+   - Direções configuráveis do vento (`Config.hpp`).  
+   - Atualização iterativa com duas matrizes para evitar conflitos de estado.  
+
+3. **Movimentação Inteligente do Animal**  
+   - Prioriza rotas seguras: `Água (4) > Vazio (0) > Árvore saudável (1) > Queimada (3)`.  
+   - **Segunda chance:** Se atingido pelo fogo, tenta escapar novamente.  
+
+4. **Entrada/Saída de Dados**  
+   - Leitura de cenários via `input.dat`.  
+   - Geração de logs detalhados em `output.dat`, incluindo:  
+     - Posição do animal (`A`) em cada iteração.  
+     - Estatísticas finais (passos, sobrevivência, etc.).  
 
 ---
 
